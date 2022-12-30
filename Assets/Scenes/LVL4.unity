@@ -419,8 +419,7 @@ MonoBehaviour:
   normal: {fileID: 2100000, guid: 27c8b1ec1f579f442ad3ff5057788857, type: 2}
   transparent: {fileID: 2100000, guid: 3968dccaeae72654485d5a29912edf38, type: 2}
   canPush: 1
-  posChenger: 0
-  trimercount: 1.5
+  trimercount: 1
 --- !u!1001 &599664496
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1171,7 +1170,6 @@ MonoBehaviour:
   normal: {fileID: 2100000, guid: 27c8b1ec1f579f442ad3ff5057788857, type: 2}
   transparent: {fileID: 2100000, guid: 3968dccaeae72654485d5a29912edf38, type: 2}
   canPush: 1
-  posChenger: 0
   trimercount: 0
 --- !u!136 &1412934048
 CapsuleCollider:
