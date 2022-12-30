@@ -5,7 +5,7 @@ using UnityEngine;
 public class CubeMovement : MonoBehaviour
 {
     public float ForceValue;
-
+    //private Activator sleep;
     private Rigidbody rb;
 
     void Start()
@@ -13,13 +13,15 @@ public class CubeMovement : MonoBehaviour
         Physics.gravity = new Vector3(0, -20, 0);
 
         rb = GetComponent<Rigidbody>();
+        //sleep = GetComponent<Activator>();
 
-        SwipeDetection.SwipeEvent;
+        //sleep.fade();
+        //SwipeDetection;
     }
 
 
     void Update()
     {
-
+        transform.position = transform.position + new Vector3(1.50f, 0, 0);
     }
 }
