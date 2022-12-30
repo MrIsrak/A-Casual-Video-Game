@@ -50,6 +50,7 @@ public class Activator : MonoBehaviour
                         transform.position += new Vector3(0, 0.05f, 0);
                         posChenger = true;
                         //button.canPush = false;
+                        //
                     }
                     button.canPush = true;
                 }
