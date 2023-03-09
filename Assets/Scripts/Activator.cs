@@ -14,19 +14,17 @@ public class Activator : MonoBehaviour
     bool posChenger = true;
     bool posChenger2 = true;
     int Timer;
+    bool MoveDown = False;
     public int trimercount;
-
-/*
-    IEnumerator fade()
-    {
-        transform.position = transform.position + new Vector3(0, -0.05f, 0);
-
-        yield return new WaitForSeconds(3.0f);
-
-        transform.position = transform.position + new Vector3(0, 0.05f, 0);
-    }
-*/
-
+    
+    void Update()
+        {
+            if (moveDown)
+            {
+                tranform.Traslate(Vector3.down * Time.DeltaTime * 0.05f);
+            }
+        }
+       
     private void OnTriggerEnter(Collider other)
     {
         if (canPush)
@@ -47,8 +45,8 @@ public class Activator : MonoBehaviour
                         posChenger = false;
                         button.canPush = false;
                     }
-                    Timer = Timer + (int)Time.deltaTime;
-                    if (Timer == (int)trimercount)
+                    Timer = Timer + (float)Time.deltaTime;
+                    if (Timer > (int)trimercount)
                     {
                         transform.position += new Vector3(0, 0.05f, 0);
                         posChenger = true;
